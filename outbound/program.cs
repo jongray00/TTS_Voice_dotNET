@@ -8,15 +8,15 @@ namespace Example
     {
         protected override void Setup()
         {
-            Project = "649dc08e-3558-4efe-a598-46a966164b83";
-            Token = "PTdaf6a2203f03e081317bc3c4dae79542fd737ae9cf49db60";
+            Project = "649dc08e-3558-4efe-a598-46a9XXXXXXXXXXXX";
+            Token = "PTdaf6a2203f03e081317bc3c4dae79542fd73XXXXXXXXXXXXX";
         }
 
         protected override void Ready()
         {
             // Create a new phone call and dial it immediately, block until it's answered, times out,
             // busy, or another error occurs
-            DialResult resultDial = Client.Calling.DialPhone("+14803769009", "+17607972682");
+            DialResult resultDial = Client.Calling.DialPhone("+14803769XXXX", "+1760797XXXXX");
 
             // Prompt with TTS and collect the PIN, block until it's finished or an error occurs
             PromptResult resultPrompt = resultDial.Call.PromptTTS(
